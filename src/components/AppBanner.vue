@@ -3,7 +3,7 @@
       <v-img
         dark
         max-height="500px"
-        src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        :src="logo('background.jpg')"
       >
         <v-layout fill-height align-center>
           <v-container>
@@ -34,5 +34,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    logo(name) {
+      return require("../assets/" + name);
+    },
+  },
+}
 </script>
