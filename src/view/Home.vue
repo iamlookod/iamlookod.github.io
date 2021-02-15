@@ -160,7 +160,7 @@ export default {
         year: "2017 - 2018",
         business: "Tixget / Dtac Accelerate",
         role: "Software Developer",
-        ref: [{ name: "Deepscope", link: "https://deepscope.com/" }],
+        ref: [{ name: "tixget", link: "#" }],
       },
       {
         color: "orange",
