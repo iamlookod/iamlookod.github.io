@@ -117,6 +117,17 @@
           </v-layout>
         </v-flex>
       </v-layout>
+
+      <v-layout wrap my-16>
+        <v-flex xs12 mb-5>
+          <div class="display-1 font-weight-bold" id="contact">Contact me</div>
+        </v-flex>
+        <template v-for="(contact, i) in contacts">
+          <v-flex sm6 md4 xs12 :key="i">
+            <app-contact :contact="contact" ></app-contact>
+          </v-flex>
+        </template>
+      </v-layout>
     </v-container>
   </div>
 </template>
@@ -124,9 +135,10 @@
 <script>
 import AppBanner from "@/components/AppBanner.vue";
 import AppSkillCard from "../components/AppSkillCard.vue";
+import AppContact from '../components/AppContact.vue';
 
 export default {
-  components: { AppBanner, AppSkillCard },
+  components: { AppBanner, AppSkillCard, AppContact },
   data: () => ({
     aboutMe:
       "I love coding and develop web and apps. I enjoy learning and Try new technology for develope software in my free time. I just curious to see how things work. I quick learnning when i love it. Love to encourage my friend that they can do it too !",
@@ -231,6 +243,38 @@ export default {
       { name: "MSSQL", logo: "mssql.png" },
       { name: "Sqlite", logo: "sqlite.png" },
     ],
+    contacts: [
+        {
+          name: "Email",
+          value: "preecharat.lookod@gmail.com",
+          link: "mailto:reecharat.lookod@gmail.com",
+          icon: "mdi-email"
+        },
+        {
+          name: "LinkedIn",
+          value: "Precharat Chuenta",
+          link: "https://www.linkedin.com/in/preecharat-chuenta/",
+          icon: "mdi-linkedin"
+        },
+        {
+          name: "Github",
+          value: "iamlookod",
+          link: "https://github.com/iamlookod/",
+          icon: "mdi-github"
+        },
+        {
+          name: "Facebook",
+          value: "Precharat Chuenta",
+          link: "https://www.facebook.com/OddPrecharat",
+          icon: "mdi-facebook"
+        },
+        {
+          name: "Tel",
+          value: "Precharat Chuenta",
+          link: "tel:66803355181",
+          icon: "mdi-phone"
+        },
+      ]
   }),
 };
 </script>
