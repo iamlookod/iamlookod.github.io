@@ -146,8 +146,20 @@ export default {
       "Bachelor of Science Program in Information and Communication Technology, Major Computer Science, Sukhothai Thammathirat Open University — 2013-2016",
     experiences: [
       {
+        color: "teal",
+        year: "2021 - PRESET",
+        business: "LikeSoft",
+        role: "Lead Infrastructure & DevOps",
+        ref: [
+          {
+            name: "LikeSoft",
+            link: "#",
+          },
+        ],
+      },
+      {
         color: "red",
-        year: "2019 - PRESET",
+        year: "2019 - 2021",
         business: "SCG Digital Office",
         role: "Technology Developer",
         ref: [
